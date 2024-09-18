@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fuente-kumbh: "Kumbh Sans", sans-serif;
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-size: 18px;
+  background: var(--Dark-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-top img {
+  position: absolute;
+  top: -329px;
+  left: -51px;
+  right: 0;
+  z-index: -900;
+}
+
+.bg-botomm img {
+  position: absolute;
+  top: 374px;
+  left: 1112px;
+  right: 0;
+  z-index: -900;
+  zoom: 100%;    
+}
+
+.container {
+  width: 370px;
+  background: white;
+  z-index: 900;
+  border-radius: 12px;
+  margin-left: 111px;
+  -webkit-box-shadow: 11px 4px 28px -4px rgba(0,0,0,0.18);
+-moz-box-shadow: 11px 4px 28px -4px rgba(0,0,0,0.18);
+box-shadow: 11px 4px 28px -4px rgba(0,0,0,0.18);
+}
+
+.fondo-perfil img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+.foto-perfil img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -55px;
+  margin-left: 135px;
+  margin-bottom: 15px;
+}
+
+.container h1 {
+  font-family: var(--fuente-kumbh);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 8px;
+}
+
+.edad {
+  color: var(--Dark-gray);
+  font-weight: 500;
+}
+.pais {
+  color: var(--Dark-gray);
+  font-weight: 400;
+  font-size: 15 px;
+  font-family: var(--fuente-kumbh);
+  text-align: center;
+  margin-bottom: 25px;
+}
+hr {
+  border: 1px solid hsla(0, 0%, 59%, 0.114);
+  margin-bottom: 30px;
+}
+
+.numeros {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.numeros p {
+  width: 20%;
+  font-weight: bold;
+  font-family: var(--fuente-kumbh);
+  font-size: 23px;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.editar {
+  color: var(--Dark-gray);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--fuente-kumbh);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+footer{
+    margin-left: 100px;
+}
+
+@media(max-width: 375px) {
+
+    body {
+        min-height: 60vh;
+  
+    
+      }
+
+    .container{
+        margin-left: 0;
+        width: 340px;
+    }
+    .foto-perfil img {
+        margin-left: 120px;
+    
+      }
+
+      .bg-top img {
+        position: absolute;
+        width: 400px;
+        top: -200px;
+        left: -200px;
+        
+       
+      }
+      
+      .bg-botomm img {
+        position: absolute;
+        width: 400px;
+        top: 450px;
+        left: 200px;   
+      }
+      
+
+      footer{
+        margin-left: 0;
+      }
+}
